@@ -38,9 +38,9 @@
         {
           color:cyan;
         }
-        .
-        .carousel-indicators{
-            color:cyan;
+        .carousel-indicators li {
+          background-color: rgba(16, 15, 15, 1);
+          border: 1px solid #27c5d2;
         }
 
         .DemoScreens{
@@ -49,11 +49,33 @@
           margin-right: auto;
         }
 
-        .socialic
-        {
+        .socialic{
           font-size:15px;
           color:cyan;
         }
+
+        ul li, ol li {
+          list-style: disc;      
+        }
+
+        .carousel-control .icon-prev {
+          left: -20px;
+          font-size:3em;
+          top:39%;
+        }
+
+        .carousel-control .icon-next {
+          right: -20px;
+          font-size:3em;
+          top:39%;
+        }
+
+         #main-navbar li.nav-item{list-style: none;}
+         
+         li.nav-item a{list-style: none;}
+         .serviceIcon{
+          font-size: 5em;text-align: center;color:#00b4d9;
+         }
     </style>
   </head>
   <body>
@@ -106,11 +128,11 @@
                 <a class="nav-link linkedin" href="https://www.linkedin.com/in/aishwarya-munde-b9514816b"><i class=" socialic fa fa-facebook-square" aria-hidden="true"></i></a>
               </li>
 
-              <li>
+              <li class="nav-item">
                     <a class="nav-link google" href="https://plus.google.com/u/0/114093922371043945718"><i class=" socialic fa fa-google-plus-square" aria-hidden="true"></i></a>
               </li>
 
-              <li>
+              <li class="nav-item">
                     <a class="nav-link google" href="https://plus.google.com/u/0/114093922371043945718"><i class=" socialic fa fa-github-square"></i></a>
               </li>
               
@@ -164,81 +186,50 @@
       <div class="container">
         <div class="row">
           <!-- col1 -->
-          <div class="col-md-6 col-lg-2 col-xs-12">
+          <div class="col-md-4 col-lg-4 col-xs-12">
             <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
+                <h3><a href="#">HTML</a></h3>
               <div class="icon">
                 <i class="icon-layers"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">HTML</a></h3>
+                <h4>Hypertext Markup Language is the standard markup language for creating web pages and web applications. </h4>
                 <p></p>
               </div>
             </div>
           </div>
 		  
           <!-- col2 -->
-          <div class="col-md-6 col-lg-2 col-xs-12">
+          <div class="col-md-4 col-lg-4 col-xs-12">
             <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
+                <h3><a href="#">CSS</a></h3>
               <div class="icon">
                 <i class="icon-layers"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">CSS</a></h3>
+                <h4>Cascading Style Sheets is a style sheet language used for describing 
+                  the presentation of a document </h4>
                 <p></p>
               </div>
             </div>
           </div>
 
           <!-- col3 -->
-          <div class="col-md-6 col-lg-2 col-xs-12">
+          <div class="col-md-4 col-lg-4 col-xs-12">
             <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
-              <div class="icon">
-                <i class="icon-layers"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">BOOTSTRAP</a></h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- col4 -->
-          <div class="col-md-6 col-lg-2 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon">
-                <i class="icon-layers"></i>
-              </div>
-              <div class="services-content">
                 <h3><a href="#">JAVASCRIPT</a></h3>
+              <div class="icon">
+                <i class="icon-layers"></i>
+              </div>
+              <div class="services-content">
+                <h4>JavaScript, often abbreviated as JS, is a high-level, interpreted programming language 
+                  </h4>
                 <p></p>
               </div>
             </div>
           </div>
 
-          <!-- col4 -->
-          <div class="col-md-6 col-lg-2 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon">
-                <i class="icon-layers"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">JQUERY</a></h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-2 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon">
-                <i class="icon-layers"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">ANGULAR2</a></h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
+          
           
         </div>
         </br>
@@ -252,6 +243,7 @@
     <!-- section 2 -->
     <section id="resourses" class="section-padding">
       <div class="container">
+          <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Our Works</h2>
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
@@ -259,17 +251,19 @@
             </div>
           </div> 
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
-              <h3>Website Design</h3>
-              <p>We work to make you look good online. 
-                A good web design helps duplicate your time and can increase your turnover without any extra effort. 
-                NextWebi offers you unique web design with interactive UI that have better user experience,
-               stand out to give you an edge over competitors, lesser bounce rates, less loading time
-			        </p>
-              <p>
-                  The website depicts your company on the internet and us at Nextwebi proudly say that our 
-                  great reputation and proven trust is the best asset for us. We provide professional, creative, fast turnaround time
-              </p>
+            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s"> 
+              <ul style="font-size: 20px;">
+                  <li>Data Resolve</li>
+                  <li>Testing campus</li>
+                  <li>Trishna Technologies</li>
+                  <li>Frontier Heights</li>
+                  <li>Myclinic</li>
+                  <li>The Candid Theory</li>
+                  <li>Chaai Resto</li>
+                  <li>Beauty Plus Health</li>
+                  <li>Get Battery</li>
+                  <li>Radiant Cabs</li>
+              </ul>
             </div>
           </div>   
         </div>
@@ -278,80 +272,76 @@
     <!-- Section2 End -->
 
     <!-- section3 -->
-    <div id="company" class="section-padding">
+    <div id="company" style="background-color:#f0f0f0;" class="section-padding">
       <div class="container">
+        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Our Services</h2>
+        
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6">
             <div class="education wow fadeInRight" data-wow-delay="0.3s">
-              <ul class="timeline">
-                <li>
-                  <i class="icon-graduation"></i>
-                  <h2 class="timelin-title">Our Services</h2>
-                </li>
-				        <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Website Design</h3>
-                   
-                    <p class="line-text">We work to make you look good online.
-                     A good web design helps duplicate your time and can increase your turnover without any extra effort.
-                      NextWebi offers you unique web design with interactive UI that have better user experience, 
-                    stand out to give you an edge over competitors, lesser bounce rates, less loading time and</p>
+              <div class="row">
+              <div class="col-sm-2 col-lg-2 col-md-2 serviceIcon" >
+                  <i class="glyphicon glyphicon-globe"></i>
+              </div>
+              <div class="col-sm-10 col-lg-10 col-md-10">
+                  <h3>Website Design</h3>
+                  <h5>We work to make you look good online</h5>
+              </div>
+              </div>
+              
+              <div class="row">
+                  <div class="col-sm-2 col-lg-2 col-md-2 serviceIcon" >
+                      <i class="glyphicon glyphicon glyphicon-edit"></i>
                   </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Website Application Development</h3>
-                    
-                    <p class="line-text">The website depicts your company on the internet and us at Nextwebi proudly say 
-                    that our great reputation and proven trust is the best asset for us. 
-                    We provide professional, creative, fast turnaround time</p>
+                  <div class="col-sm-10 col-lg-10 col-md-10">
+                      <h3>Website Application </h3>
+                      <h5>The website depicts your company on the internet</h5>
                   </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Branding & Strategy</h3>
-                    
-                    <p class="line-text">We just not only focus on graphic design but at your brand’s overall persona, 
-                    values and device ways in which the website branding can accentuate it's online performance.</p>
+              </div>
+
+              <div class="row">
+                  <div class="col-sm-2 col-lg-2 col-md-2 serviceIcon" >
+                      <i class="glyphicon glyphicon-education"></i>
                   </div>
-                </li>
-                
-              </ul>
+                  <div class="col-sm-10 col-lg-10 col-md-10">
+                      <h3>Branding & Strategy</h3>
+                      <h5>We just not only focus on graphic design but at your brand’s </h5>
+                  </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6">
             <div class="experience wow fadeInRight" data-wow-delay="0.6s">
-              <ul class="timeline">
-                <li>
-                  <i class="icon-briefcase"></i>
-                  <h2 class="timelin-title">Other Services</h2>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Digital Marketing</h3>
-                    
-                    <p class="line-text">At Nextwebi we provide design solutions for brands that wish to connect with a varied larger audience in the digital domain. 
-                    Digital marketing in its various ways maximize brand’s online and offline presence with eye-catching visuals to amazing content</p>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-2 col-md-2 serviceIcon" >
+                    <i class="glyphicon glyphicon-phone"></i>
                   </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">API Integrations</h3>
-                    
-                    <p class="line-text">We have an extensive experience in 3rd party API integrations across the 
-                    domain which helps our customers to integrate the application with multiple systems. Contact us to discuss more with our expert.</p>
+                  <div class="col-sm-10 col-lg-10 col-md-10">
+                    <h3>API Integrations</h3>
+                    <h5>We have an extensive experience in 3rd party API integrations</h5>
                   </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Search Engine Optimization</h3>
-                    
-                    <p class="line-text">Amidst IT revolution, the internet is playing a pivotal role in success and failure of a business. 
-                    In fact, every small,medium and large business houses are trying their best to seize the 
-                    oceanic opportunity that the internet has given to them.</p>
-                  </div>
-                </li>
-              </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2 col-lg-2 col-md-2 serviceIcon" >
+                      <i class="glyphicon glyphicon-search"></i>
+                    </div>
+                    <div class="col-sm-10 col-lg-10 col-md-10">
+                      <h3>Search Engine</h3>
+                      <h5>Contact us to discuss more with our expert </h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2 col-lg-2 col-md-2 serviceIcon" >
+                        <i class="glyphicon glyphicon-link"></i>
+                    </div>
+                    <div class="col-sm-10 col-lg-10 col-md-10">
+                        <h3>Digital Marketing</h3>
+                        <h5>Digital marketing in its various ways maximize brand’s online and offline </h5>
+                    </div>
+                </div>
+
             </div>
           </div>
         </div>
@@ -360,7 +350,7 @@
     <!-- Section3 End -->
 
     <!-- section4 sliders with dots -->
-    <section id="contact" style="background-color:#f0f0f0;" class="section-padding">
+    <section id="contact" style="background-color:white;" class="section-padding">
       
       <div class="container">        
         <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Our Remarkable Works</h2>
@@ -371,9 +361,7 @@
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                   <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                  
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li> 
                 </ol>
 
                   <!-- Wrapper for slides -->
@@ -421,116 +409,210 @@
                         </div>
                     </div>
                       <!-- Slide -->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-3 col-xs-6">
-                                <img src="assets/img/gallery/img-3.jpg" alt=""/>
-                                <div class="carousel-caption">Branding & Strategy</div>
-                            </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <img src="assets/img/gallery/img-1.jpg" alt=""/>
-                                <div class="carousel-caption">Website Design</div>
-                            </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <img src="assets/img/gallery/img-5.jpg" alt=""/>
-                                <div class="carousel-caption">Branding & Strategy</div>
-                            </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <img src="assets/img/gallery/img-2.jpg" alt=""/>
-                                <div class="carousel-caption">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>                  
           </div>
       </div> 
     </section>
     <!--swction4 ends-->
+
+        <!-- section5 sliders with 3 dots -->
+        <section id="contact" style="background-color:#f0f0f0;" class="section-padding">
+      
+            <div class="container">        
+              <h2 class="section-title wow flipInX" data-wow-delay="0.4s">We Provide</h2>
+              <div class="row">          
+                <div class="col-md-12">
+                  
+                   <div id="carousel-example-generic2" class="carousel slide">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators" style="bottom:-20px;">
+                        <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+                      </ol>
+      
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <!-- Slide -->
+                          <div class="item active">
+                              <div class="row"  style="text-align:center;">
+                                  <div class="col-sm-2 col-xs-6 ">
+                                      <i class=" serviceIcon glyphicon glyphicon-globe"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-screenshot"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-upload"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-share"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-bullhorn"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-wrench"></i>
+                                  </div>
+                              </div>
+                          </div>
+                            <!-- Slide -->
+                          <div class="item">
+                              <div class="row"  style="text-align:center;">
+                                  <div class="col-sm-2 col-xs-6 ">
+                                      <i class=" serviceIcon glyphicon glyphicon-globe"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-screenshot"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-upload"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-share"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-bullhorn"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-wrench"></i>
+                                  </div>
+                              </div>
+                          </div>
+                            <!-- Slide -->
+                          <div class="item">
+                              <div class="row"  style="text-align:center;">
+                                  <div class="col-sm-2 col-xs-6 ">
+                                      <i class=" serviceIcon glyphicon glyphicon-globe"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-screenshot"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-upload"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-share"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-bullhorn"></i>
+                                  </div>
+                                  <div class="col-sm-2 col-xs-6">
+                                      <i class=" serviceIcon glyphicon glyphicon-wrench"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>                  
+                </div>
+            </div> 
+          </section>
+          <!--swction5 ends-->
    
-    <!-- section5 -->
+    <!-- section6 -->
+   
     <section id="" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid img-circle mx-auto d-block" src="assets/img/u1.png" alt="">
-            </div>
-            <div style="text-align:justify">Thank you! Great service.Great professional website design work. 
-            I liked their web design skills and really appreciate the creativity. I would surely recommend to everyone</div>
-          </div> 
-            
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid img-circle mx-auto d-block" src="assets/img/u2.png" alt="">
-            </div>
-            <div style="text-align:center">Great service.Great professional website design work. 
-            I liked their web design skills and really appreciate the creativity</div>
-          </div> 
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid img-circle mx-auto d-block" src="assets/img/u3.png" alt="">
-            </div>
-            <div style="text-align:center">Thank you! Great service.I would surely recommend to everyone</div>
-          </div>  
-        </div>
-      </div>
-    </section>
-    <!-- Section5 End -->
-
-   
-
-      <!-- section6 sliders with dots -->
-    <section id="" style="background-color:#f0f0f0;" class="section-padding"> 
-      <div class="container">
-          <div style="text-align:center;"><h2 class="section-title wow flipInX" data-wow-delay="0.4s">Done By Us</h2></div>  
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            
-            <div class="carousel-inner">
-              <div class="item active">
-                <img class="DemoScreens" style="max-height:400px;width:75%;" src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/HTML-web-hosting-website-templates.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align:center">
+              <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+                <button  class="btn btn-common"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Require Demo</button>
               </div>
-
-              <div class="item">
-                <img   class="DemoScreens"  style="max-height:400px;width:75%;" src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/engine-web-hosting-website-template.jpg" alt="Chicago" style="width:100%;">
+            </div> 
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align:center">
+              <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+                <button  class="btn btn-common"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contact Us</button>
               </div>
-            
-              <div class="item">
-                <img class="DemoScreens" style="max-height:400px;width:75%;" src="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/breed-web-hosting-website-template.jpg" alt="New york" style="width:100%;">
-              </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            </div>   
           </div>
-      </div>
-    </section>
-    <!--swction6 ends-->
-   
-     <!-- section7 -->
-    <section id="" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align:center">
-            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <button  class="btn btn-common"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Require Demo</button>
-            </div>
-          </div> 
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align:center">
-            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <button  class="btn btn-common"><i class="fa fa-address-book-o" aria-hidden="true"></i> Contact Us</button>
-            </div>
-          </div>   
         </div>
-      </div>
-    </section>
-    <!-- Section7 End -->
+      </section>
+
+    <!-- Section6 End -->
+
+        <!-- section7 sliders with arrows -->
+        <section id="contact" style="background-color:#f0f0f0;" class="section-padding">
+      
+            <div class="container">        
+              <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Our Blogs</h2>
+              <div class="row">          
+                <div class="col-md-12">
+                  
+                   <div id="carousel-example-generic3" class="carousel slide">
+                           
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <!-- Slide -->
+                          <div class="item active">
+                              <div class="row" style="text-align: center">
+                                  <div class="col-sm-3 col-xs-6">
+                                      <img src="assets/img/gallery/img-1.jpg" alt=""/>
+                                      <div >
+                                        <h4>How to analyse a web development company</h4>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-3 col-xs-6">
+                                      <img src="assets/img/gallery/img-2.jpg" alt=""/>
+                                      <div >
+                                          <h4>Radio Frequency Identification (RFID) Solutions</h4>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-3 col-xs-6">
+                                      <img src="assets/img/gallery/img-3.jpg" alt=""/>
+                                      <div >
+                                          <h4>Tips to Reduce Bounce Rate on Your Website</h4>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-3 col-xs-6">
+                                      <img src="assets/img/gallery/img-4.jpg" alt=""/>
+                                      <div >
+                                          <h4>Few Effective Ways to Promote your Business Online</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                            <!-- Slide -->
+                          <div class="item">
+                              <div class="row" style="text-align: center">
+                                  <div class="col-sm-3 col-xs-6">
+                                      <img src="assets/img/gallery/img-1.jpg" alt=""/>
+                                      <div >
+                                        <h4>How to analyse a web development company</h4>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-3 col-xs-6">
+                                      <img src="assets/img/gallery/img-2.jpg" alt=""/>
+                                      <div >
+                                          <h4>Radio Frequency Identification (RFID) Solutions</h4>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-3 col-xs-6">
+                                      <img src="assets/img/gallery/img-3.jpg" alt=""/>
+                                      <div >
+                                          <h4>Tips to Reduce Bounce Rate on Your Website</h4>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-3 col-xs-6">
+                                      <img src="assets/img/gallery/img-4.jpg" alt=""/>
+                                      <div >
+                                          <h4>Few Effective Ways to Promote your Business Online</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                            <!-- Slide -->
+                         
+                      </div>  
+                      <a class="left carousel-control" href="#carousel-example-generic3" data-slide="prev">
+                          <span class=" serviceIcon icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic3" data-slide="next">
+                          <span class=" serviceIcon icon-next"></span>
+                        </a>                
+                </div>
+            </div> 
+          </section>
+          <!--swction7 ends-->
 
     <!-- Footer Section Start -->
     <footer class="footer-area section-padding">

@@ -58,7 +58,7 @@ ul, ol {
 }
 
 ul li, ol li {
-  list-style: none;
+  list-style: disc;
 }
 
 .hero-heading {
